@@ -1,6 +1,6 @@
 {application, kashe,
  [{description, "Simple LRU Cache Application"},
-  {vsn, "1.0.0"},
+  {vsn, "1.0.1"},
   {registered, []},
   {mod, { kashe_app, []}},
   {applications,
