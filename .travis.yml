@@ -1,0 +1,15 @@
+sudo: false
+dist: trusty
+language: erlang
+otp_release:
+  - 18.3
+  - 19.3
+  - 20.3
+install:
+  - rebar3 compile
+script:
+  - rebar3 xref
+  - rebar3 dialyzer
+  - rebar3 eunit
+  - rebar3 release
+  - rebar3 as prod release
